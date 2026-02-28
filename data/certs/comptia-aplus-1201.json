@@ -1,0 +1,394 @@
+{
+  "id": "comptia-aplus-1201",
+  "name": "CompTIA A+ Core 1 (220-1201)",
+  "exam_code": "220-1201",
+  "passing_score": 675,
+  "max_score": 900,
+  "time_minutes": 90,
+  "question_count": 90,
+  "domains": [
+    { "number": 1, "name": "Mobile Devices", "weight": 13 },
+    { "number": 2, "name": "Networking", "weight": 23 },
+    { "number": 3, "name": "Hardware", "weight": 25 },
+    { "number": 4, "name": "Virtualization and Cloud Computing", "weight": 11 },
+    { "number": 5, "name": "Hardware and Network Troubleshooting", "weight": 28 }
+  ],
+  "objectives": [
+    {
+      "id": "aplus-1201-1.1",
+      "domain": 1,
+      "title": "Given a scenario, monitor mobile device hardware and use appropriate replacement techniques.",
+      "subtopics": [
+        "Battery",
+        "Keyboard/keys",
+        "RAM",
+        "HDD/SSD",
+        "Wireless cards",
+        "Physical privacy and security components (Biometrics, Near-field scanner features)",
+        "Wi-Fi antenna connector/placement",
+        "Camera/webcam",
+        "Microphone"
+      ]
+    },
+    {
+      "id": "aplus-1201-1.2",
+      "domain": 1,
+      "title": "Compare and contrast accessories and connectivity options for mobile devices.",
+      "subtopics": [
+        "Connection methods (USB/USB-C/microUSB/miniUSB, Lightning, NFC, Bluetooth, Tethering/hotspot)",
+        "Docking station",
+        "Port replicator",
+        "Trackpad/drawing pad/track points",
+        "Accessories (Stylus, Headsets, Speakers, Webcam)"
+      ]
+    },
+    {
+      "id": "aplus-1201-1.3",
+      "domain": 1,
+      "title": "Given a scenario, configure basic mobile device network connectivity and provide application support.",
+      "subtopics": [
+        "Wireless/cellular data network (3G/4G/5G, Hotspot, Wi-Fi, SIM/eSIM)",
+        "Bluetooth (Enable, pairing, find device, PIN, test)",
+        "Location services (GPS, Cellular)",
+        "MDM (Device configs Corporate/BYOD, Policy enforcement, Corporate apps)",
+        "Mobile device synchronization (Data caps, Calendar, Contacts, Business apps Mail/Cloud storage)"
+      ]
+    },
+    {
+      "id": "aplus-1201-2.1",
+      "domain": 2,
+      "title": "Compare and contrast TCP and UDP ports, protocols, and their purposes.",
+      "subtopics": [
+        "Ports and protocols (20/21 FTP, 22 SSH, 23 Telnet, 25 SMTP, 53 DNS, 67/68 DHCP, 80 HTTP, 110 POP3, 143 IMAP, 137-139 NetBIOS/NetBT, 389 LDAP, 443 HTTPS, 445 SMB/CIFS, 3389 RDP)",
+        "TCP vs. UDP"
+      ]
+    },
+    {
+      "id": "aplus-1201-2.2",
+      "domain": 2,
+      "title": "Explain wireless networking technologies.",
+      "subtopics": [
+        "Frequencies (2.4GHz, 5GHz, 6GHz)",
+        "Channels (Regulations, Channel selection Widths/Frequencies/Bands)",
+        "Bluetooth",
+        "802.11 standards",
+        "NFC",
+        "RFID"
+      ]
+    },
+    {
+      "id": "aplus-1201-2.3",
+      "domain": 2,
+      "title": "Summarize services provided by networked hosts.",
+      "subtopics": [
+        "Server roles (DNS, DHCP, Fileshare, Print servers, Mail servers, Syslog, Web servers, AAA, Database servers, NTP)",
+        "Internet appliances (Spam gateways, UTM, Load balancers, Proxy servers)",
+        "Legacy/embedded systems (SCADA)",
+        "IoT devices"
+      ]
+    },
+    {
+      "id": "aplus-1201-2.4",
+      "domain": 2,
+      "title": "Explain common network configuration concepts.",
+      "subtopics": [
+        "DNS (A, AAAA, CNAME, MX, TXT incl SPF/DKIM/DMARC)",
+        "DHCP (Leases, Reservations, Scope, Exclusions)",
+        "VLAN",
+        "VPN"
+      ]
+    },
+    {
+      "id": "aplus-1201-2.5",
+      "domain": 2,
+      "title": "Compare and contrast common networking hardware devices.",
+      "subtopics": [
+        "Routers",
+        "Switches (Managed, Unmanaged)",
+        "Access points",
+        "Patch panel",
+        "Firewall",
+        "PoE (Injectors, Switch, Standards)",
+        "Cable modem",
+        "DSL",
+        "ONT",
+        "NIC (MAC address)"
+      ]
+    },
+    {
+      "id": "aplus-1201-2.6",
+      "domain": 2,
+      "title": "Given a scenario, configure basic wired/wireless SOHO networks.",
+      "subtopics": [
+        "IP addressing (IPv4 Private/Public, IPv6, APIPA, Static, Dynamic, Subnet mask, Gateway)"
+      ]
+    },
+    {
+      "id": "aplus-1201-2.7",
+      "domain": 2,
+      "title": "Compare and contrast internet connection types, network types, and their characteristics.",
+      "subtopics": [
+        "Internet connection types (Satellite, Fiber, Cable, DSL, Cellular, WISP)",
+        "Network types (LAN, WAN, PAN, MAN, SAN, WLAN)"
+      ]
+    },
+    {
+      "id": "aplus-1201-2.8",
+      "domain": 2,
+      "title": "Explain networking tools and their purposes.",
+      "subtopics": [
+        "Crimper",
+        "Cable stripper",
+        "Wi-Fi analyzer",
+        "Toner probe",
+        "Punchdown tool",
+        "Cable tester",
+        "Loopback plug",
+        "Network tap"
+      ]
+    },
+    {
+      "id": "aplus-1201-3.1",
+      "domain": 3,
+      "title": "Compare and contrast display components and attributes.",
+      "subtopics": [
+        "Types (LCD: IPS/TN/VA, OLED, Mini-LED)",
+        "Touch screen/digitizer",
+        "Inverter",
+        "Attributes (Pixel density, Refresh rates, Screen resolution, Color gamut)"
+      ]
+    },
+    {
+      "id": "aplus-1201-3.2",
+      "domain": 3,
+      "title": "Summarize basic cable types and their connectors, features, and purposes.",
+      "subtopics": [
+        "Network cables (Copper: Categories T568A/T568B, Coaxial, STP Direct burial, UTP, Plenum-rated, Optical: Single-mode/Multimode)",
+        "Peripheral cables (USB 2.0, USB 3.0, Serial, Thunderbolt)",
+        "Video cables (HDMI, DisplayPort, DVI, VGA, USB-C)",
+        "Hard drive cables (SATA, eSATA)",
+        "Adapters",
+        "Connector types (RJ11, RJ45, F-type, ST, SC, LC, Punchdown block, MicroUSB, MiniUSB, USB-C, Molex, Lightning, DB9)"
+      ]
+    },
+    {
+      "id": "aplus-1201-3.3",
+      "domain": 3,
+      "title": "Compare and contrast RAM characteristics.",
+      "subtopics": [
+        "Form factors (SODIMM, DIMM)",
+        "DDR iterations",
+        "ECC vs non-ECC",
+        "Channel configurations"
+      ]
+    },
+    {
+      "id": "aplus-1201-3.4",
+      "domain": 3,
+      "title": "Compare and contrast storage devices.",
+      "subtopics": [
+        "Hard drives (Spindle speeds, Form factors 2.5\"/3.5\")",
+        "SSDs (NVMe, SATA, PCIe, SAS, Form factors M.2/mSATA)",
+        "RAID (0, 1, 5, 6, 10)",
+        "Removable storage (Flash drives, Memory cards)",
+        "Optical drives"
+      ]
+    },
+    {
+      "id": "aplus-1201-3.5",
+      "domain": 3,
+      "title": "Given a scenario, install and configure motherboards, CPUs, and add-on cards.",
+      "subtopics": [
+        "Motherboard form factors (ATX, microATX, ITX)",
+        "Connector types (PCI, PCIe, Power, SATA, eSATA, Headers, M.2)",
+        "Compatibility (CPU sockets AMD/Intel, Multisocket)",
+        "BIOS/UEFI settings (Boot options, USB permissions, TPM, Fan, Secure Boot, Boot/BIOS password, Temp monitoring)",
+        "Virtualization support",
+        "Encryption (TPM, HSM)",
+        "CPU architecture (x86/x64, ARM, Core configs)",
+        "Expansion cards (Sound, Video, Capture, NIC)",
+        "Cooling (Fans, Heat sink, Thermal paste/pads, Liquid)"
+      ]
+    },
+    {
+      "id": "aplus-1201-3.6",
+      "domain": 3,
+      "title": "Given a scenario, install the appropriate power supply.",
+      "subtopics": [
+        "Input 110-120V vs 220-240V",
+        "Output 3.3V/5V/12V",
+        "20+4 pin connector",
+        "Redundant PSU",
+        "Modular PSU",
+        "Wattage rating",
+        "Energy efficiency"
+      ]
+    },
+    {
+      "id": "aplus-1201-3.7",
+      "domain": 3,
+      "title": "Given a scenario, deploy and configure multifunction devices/printers and settings.",
+      "subtopics": [
+        "Unbox/setup location",
+        "Drivers (PCL vs postscript)",
+        "Firmware",
+        "Connectivity (USB, Ethernet, Wireless)",
+        "Public/shared (Printer share, Print server)",
+        "Config settings (Duplex, Orientation, Tray, Quality)",
+        "Security (User auth, Badging, Audit logs, Secured prints)",
+        "Network scan services (Email, SMB, Cloud)",
+        "ADF/flatbed scanner"
+      ]
+    },
+    {
+      "id": "aplus-1201-3.8",
+      "domain": 3,
+      "title": "Given a scenario, perform appropriate printer maintenance.",
+      "subtopics": [
+        "Laser (Replace toner, maintenance kit, calibrate, clean)",
+        "Inkjet (Ink cartridge, printhead, roller, feeder; Clean printheads, replace cartridges, calibrate, clear jams)",
+        "Thermal (Feed assembly, special paper; Replace paper, clean heating element, remove debris)",
+        "Impact (Multipart paper; Replace ribbon, printhead, paper)"
+      ]
+    },
+    {
+      "id": "aplus-1201-4.1",
+      "domain": 4,
+      "title": "Explain virtualization concepts.",
+      "subtopics": [
+        "Purpose (Sandbox, Test development, Application virtualization Legacy/Cross-platform)",
+        "Requirements (Security, Network, Storage)",
+        "Desktop virtualization (VDI)",
+        "Containers",
+        "Hypervisors (Type 1, Type 2)"
+      ]
+    },
+    {
+      "id": "aplus-1201-4.2",
+      "domain": 4,
+      "title": "Summarize cloud computing concepts.",
+      "subtopics": [
+        "Cloud models (Private, Public, Hybrid, Community, IaaS, SaaS, PaaS)",
+        "Cloud characteristics (Shared vs dedicated, Metered utilization Ingress/egress, Elasticity, Availability, File sync, Multitenancy)"
+      ]
+    },
+    {
+      "id": "aplus-1201-5.1",
+      "domain": 5,
+      "title": "Given a scenario, troubleshoot motherboards, RAM, CPUs, and power.",
+      "subtopics": [
+        "POST beeps",
+        "Proprietary crash screens",
+        "Blank screen",
+        "No power",
+        "Sluggish performance",
+        "Overheating",
+        "Burning smell",
+        "Random shutdown",
+        "Application crashes",
+        "Unusual noise",
+        "Capacitor swelling",
+        "Inaccurate system date/time"
+      ]
+    },
+    {
+      "id": "aplus-1201-5.2",
+      "domain": 5,
+      "title": "Given a scenario, troubleshoot drive and RAID issues.",
+      "subtopics": [
+        "LED status indicators",
+        "Grinding noises",
+        "Clicking sounds",
+        "Bootable device not found",
+        "Data loss/corruption",
+        "RAID failure",
+        "S.M.A.R.T. failure",
+        "Extended read/write times",
+        "Low performance IOPS",
+        "Missing drives in OS",
+        "Array missing",
+        "Audible alarms"
+      ]
+    },
+    {
+      "id": "aplus-1201-5.3",
+      "domain": 5,
+      "title": "Given a scenario, troubleshoot video, projector, and display issues.",
+      "subtopics": [
+        "Incorrect input source",
+        "Physical cabling issues",
+        "Burnt-out bulb",
+        "Fuzzy image",
+        "Display burn-in",
+        "Dead pixels",
+        "Flashing screen",
+        "Incorrect color display",
+        "Audio issues",
+        "Dim image",
+        "Intermittent projector shutdown",
+        "Sizing issues",
+        "Distorted image"
+      ]
+    },
+    {
+      "id": "aplus-1201-5.4",
+      "domain": 5,
+      "title": "Given a scenario, troubleshoot common mobile device issues.",
+      "subtopics": [
+        "Poor battery health",
+        "Swollen battery",
+        "Broken screen",
+        "Improper charging",
+        "Poor/no connectivity",
+        "Liquid damage",
+        "Overheating",
+        "Digitizer issues",
+        "Physically damaged ports",
+        "Malware",
+        "Cursor drift/touch calibration",
+        "Unable to install new apps",
+        "Stylus does not work",
+        "Degraded performance"
+      ]
+    },
+    {
+      "id": "aplus-1201-5.5",
+      "domain": 5,
+      "title": "Given a scenario, troubleshoot network issues.",
+      "subtopics": [
+        "Intermittent wireless connectivity",
+        "Slow network speeds",
+        "Limited connectivity",
+        "Jitter",
+        "Poor VoIP quality",
+        "Port flapping",
+        "High latency",
+        "External interference",
+        "Authentication failures",
+        "Intermittent internet connectivity"
+      ]
+    },
+    {
+      "id": "aplus-1201-5.6",
+      "domain": 5,
+      "title": "Given a scenario, troubleshoot printer issues.",
+      "subtopics": [
+        "Lines down pages",
+        "Garbled print",
+        "Paper jams",
+        "Faded prints",
+        "Paper not feeding",
+        "Multipage misfeed",
+        "Multiple prints pending",
+        "Speckling",
+        "Double/echo images",
+        "Grinding noise",
+        "Finishing issues (Staple jams, Hole punch)",
+        "Incorrect page orientation",
+        "Tray not recognized",
+        "Connectivity issues",
+        "Frozen print queue"
+      ]
+    }
+  ]
+}

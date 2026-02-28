@@ -1,0 +1,46 @@
+{
+  "name": "ai-study-agent",
+  "version": "0.1.0",
+  "type": "module",
+  "engines": {
+    "node": ">=22"
+  },
+  "scripts": {
+    "dev": "concurrently \"pnpm dev:ui\" \"pnpm dev:bridge\"",
+    "dev:ui": "vite --config vite.config.ts",
+    "dev:bridge": "tsx watch --env-file=.env scripts/dev.ts",
+    "dev:mcp": "tsx src/mcp/server.ts",
+    "build": "vite build --config vite.config.ts",
+    "test": "vitest run",
+    "test:watch": "vitest",
+    "import-cert": "tsx scripts/import-cert.ts"
+  },
+  "dependencies": {
+    "@anthropic-ai/claude-agent-sdk": "^0.2.62",
+    "@modelcontextprotocol/sdk": "^1.12.1",
+    "better-sqlite3": "^11.9.1",
+    "express": "^5.2.1",
+    "lit": "^3.3.2",
+    "marked": "^17.0.3",
+    "ws": "^8.19.0"
+  },
+  "devDependencies": {
+    "@lit-labs/signals": "^0.2.0",
+    "@types/better-sqlite3": "^7.6.13",
+    "@types/express": "^5.0.6",
+    "@types/ws": "^8.18.1",
+    "concurrently": "^9.1.2",
+    "signal-utils": "^0.21.1",
+    "tsx": "^4.21.0",
+    "typescript": "^5.9.3",
+    "vite": "^7.3.1",
+    "vitest": "^4.0.18",
+    "zod": "^4.3.6"
+  },
+  "pnpm": {
+    "onlyBuiltDependencies": [
+      "better-sqlite3",
+      "esbuild"
+    ]
+  }
+}

@@ -1,0 +1,479 @@
+{
+  "id": "comptia-aplus-1202",
+  "name": "CompTIA A+ Core 2 (220-1202)",
+  "exam_code": "220-1202",
+  "passing_score": 700,
+  "max_score": 900,
+  "time_minutes": 90,
+  "question_count": 90,
+  "domains": [
+    { "number": 1, "name": "Operating Systems", "weight": 28 },
+    { "number": 2, "name": "Security", "weight": 28 },
+    { "number": 3, "name": "Software Troubleshooting", "weight": 23 },
+    { "number": 4, "name": "Operational Procedures", "weight": 21 }
+  ],
+  "objectives": [
+    {
+      "id": "aplus-1202-1.1",
+      "domain": 1,
+      "title": "Explain common OS types and their purposes.",
+      "subtopics": [
+        "Workstation OSs (Windows, Linux, macOS, Chrome OS)",
+        "Mobile OSs (iPadOS, iOS, Android)",
+        "Vendor life-cycle limitations (EOL, Update limitations)",
+        "Compatibility concerns"
+      ]
+    },
+    {
+      "id": "aplus-1202-1.2",
+      "domain": 1,
+      "title": "Given a scenario, perform OS installations and upgrades in a diverse environment.",
+      "subtopics": [
+        "Boot methods (USB, Network, Solid-state/flash, Internet-based, External/hot-swappable, Internal HD partition, Multiboot)",
+        "Types of installations (Clean install, Upgrade, Image deployment, Remote network, Zero-touch, Recovery partition, Repair, Third-party drivers)",
+        "Partitioning (GPT, MBR)",
+        "Various filesystems (NTFS, ReFS, FAT32, ext4, XFS, APFS, exFAT)",
+        "Drive format",
+        "Upgrade considerations (Backup, App/driver compatibility, Hardware compatibility)",
+        "Feature updates (Product life cycle)"
+      ]
+    },
+    {
+      "id": "aplus-1202-1.3",
+      "domain": 1,
+      "title": "Compare and contrast basic features of Microsoft Windows editions.",
+      "subtopics": [
+        "Windows 10 editions (Home, Pro, Pro for Workstations, Enterprise)",
+        "Windows 11 editions (Home, Pro, Enterprise)",
+        "N versions",
+        "Feature differences (Domain vs workgroup, Desktop styles/UI, RDP availability, RAM support, BitLocker, gpedit.msc)",
+        "Upgrade paths (In-place, Clean install)",
+        "Hardware requirements (TPM, UEFI)"
+      ]
+    },
+    {
+      "id": "aplus-1202-1.4",
+      "domain": 1,
+      "title": "Given a scenario, use Microsoft Windows OS features and tools.",
+      "subtopics": [
+        "Task Manager (Services, Startup, Performance, Processes, Users)",
+        "MMC snap-ins (Event Viewer, Disk Management, Task Scheduler, Device Manager, Certificate Manager, Local Users and Groups, Performance Monitor, Group Policy Editor)",
+        "Additional tools (System Information, Resource Monitor, System Configuration, Disk Cleanup, Disk Defragment, Registry Editor)"
+      ]
+    },
+    {
+      "id": "aplus-1202-1.5",
+      "domain": 1,
+      "title": "Given a scenario, use the appropriate Microsoft command-line tools.",
+      "subtopics": [
+        "Navigation (cd, dir)",
+        "Network (ipconfig, ping, netstat, nslookup, net use, tracert, pathping)",
+        "Disk management (chkdsk, format, diskpart)",
+        "File management (md, rmdir, robocopy)",
+        "Informational (hostname, net user, winver, whoami, /? help)",
+        "OS management (gpupdate, gpresult, sfc)"
+      ]
+    },
+    {
+      "id": "aplus-1202-1.6",
+      "domain": 1,
+      "title": "Given a scenario, configure Microsoft Windows settings.",
+      "subtopics": [
+        "Internet Options",
+        "Devices and Printers",
+        "Program and Features",
+        "Network and Sharing Center",
+        "System",
+        "Windows Defender Firewall",
+        "Mail",
+        "Sound",
+        "User Accounts",
+        "Device Manager",
+        "Indexing Options",
+        "Administrative Tools",
+        "File Explorer Options (View hidden files, Hide extensions)",
+        "Power Options (Hibernate, Power plans, Sleep/suspend, Standby, Lid close, Fast startup, USB selective suspend)",
+        "Ease of Access",
+        "Time and Language",
+        "Update and Security",
+        "Personalization",
+        "Apps",
+        "Privacy",
+        "System",
+        "Devices",
+        "Network and Internet",
+        "Gaming",
+        "Accounts"
+      ]
+    },
+    {
+      "id": "aplus-1202-1.7",
+      "domain": 1,
+      "title": "Given a scenario, configure Microsoft Windows networking features on a client/desktop.",
+      "subtopics": [
+        "Domain joined vs workgroup (Shared resources, Printers, File servers, Mapped drives)",
+        "Establish connections (VPN, Wireless, Wired, WWAN/cellular)",
+        "Local OS firewall (App restrictions/exceptions, Configuration)",
+        "Proxy settings",
+        "Public vs private network",
+        "File Explorer network paths",
+        "Metered connections",
+        "Client network config (IP addressing, DNS, Subnet mask, Gateway, Static vs dynamic)"
+      ]
+    },
+    {
+      "id": "aplus-1202-1.8",
+      "domain": 1,
+      "title": "Explain common features and tools of the macOS/desktop operating system.",
+      "subtopics": [
+        "Installation/uninstallation (.dmg, .pkg, .app, App Store, Uninstall process)",
+        "System Preferences (Displays, Networks, Printers, Scanners, Privacy, Accessibility, Time Machine)",
+        "System folders (/Applications, /Users, /Library, /System, /Users/Library)",
+        "Features (Multiple desktops, Mission Control, Keychain, Spotlight, iCloud/iMessage/FaceTime/Drive, Gestures, Finder, Dock, Continuity)",
+        "Apple ID/corporate restrictions",
+        "Best practices (Backups, Antivirus, Updates/patches, RSR)",
+        "Disk Utility",
+        "FileVault",
+        "Terminal",
+        "Force Quit"
+      ]
+    },
+    {
+      "id": "aplus-1202-1.9",
+      "domain": 1,
+      "title": "Identify common features and tools of the Linux client/desktop OS.",
+      "subtopics": [
+        "File management (ls, pwd, mv, cp, rm, chmod, chown, grep, find)",
+        "Package management (apt, dnf)",
+        "Filesystem management (fsck, mount)",
+        "Informational (man, cat, top, ps, du, df)",
+        "Administrative (su, sudo)",
+        "Network (ip, ping, curl, dig, traceroute)",
+        "Text editors (nano)",
+        "Common config files (/etc/passwd, /etc/shadow, /etc/hosts, /etc/fstab, /etc/resolv.conf)",
+        "OS components (systemd, kernel, bootloader)",
+        "Root account"
+      ]
+    },
+    {
+      "id": "aplus-1202-1.10",
+      "domain": 1,
+      "title": "Given a scenario, install applications according to requirements.",
+      "subtopics": [
+        "System requirements (32-bit vs 64-bit, Dedicated vs integrated GPU, VRAM, RAM, CPU requirements, External hardware tokens, Storage, Application to OS compatibility)",
+        "Distribution methods (Physical media vs ISO, Downloadable package, Image deployment)",
+        "Impact considerations (Device, Network, Operation, Business)"
+      ]
+    },
+    {
+      "id": "aplus-1202-1.11",
+      "domain": 1,
+      "title": "Given a scenario, install and configure cloud-based productivity tools.",
+      "subtopics": [
+        "Email systems",
+        "Storage (Sync/folder settings)",
+        "Collaboration tools (Spreadsheets, Videoconferencing, Presentation, Word processing, Instant messaging)",
+        "Identity synchronization",
+        "Licensing assignment"
+      ]
+    },
+    {
+      "id": "aplus-1202-2.1",
+      "domain": 2,
+      "title": "Summarize various security measures and their purposes.",
+      "subtopics": [
+        "Physical security (Bollards, Access control vestibule, Badge reader, Video surveillance, Alarm systems, Motion sensors, Door locks, Equipment locks, Security guards, Fences)",
+        "Physical access security (Key fobs, Smart cards, Mobile digital key, Keys, Biometrics Retina/Fingerprint/Palm/Facial/Voice, Lighting, Magnetometers)",
+        "Logical security (Least privilege, Zero Trust, ACLs, MFA Email/Hardware token/Authenticator/SMS/Voice/TOTP/OTP, SAML, SSO, Just-in-time access PAM, MDM, DLP, IAM, Directory services)"
+      ]
+    },
+    {
+      "id": "aplus-1202-2.2",
+      "domain": 2,
+      "title": "Given a scenario, configure and apply basic Microsoft Windows OS security settings.",
+      "subtopics": [
+        "Defender Antivirus (Activate/deactivate, Update definitions)",
+        "Firewall (Activate/deactivate, Port security, Application security)",
+        "Users and groups (Local vs Microsoft account, Standard, Administrator, Guest, Power user)",
+        "Login options (Username/password, PIN, Fingerprint, Facial recognition, SSO, Passwordless/Windows Hello)",
+        "NTFS vs share permissions (File/folder attributes, Inheritance)",
+        "Run as admin vs standard",
+        "UAC",
+        "BitLocker",
+        "BitLocker-To-Go",
+        "EFS",
+        "Active Directory (Join domain, Login scripts, OU objects, Home folders, Group Policy, Security groups, Folder redirection)"
+      ]
+    },
+    {
+      "id": "aplus-1202-2.3",
+      "domain": 2,
+      "title": "Compare and contrast wireless security protocols and authentication methods.",
+      "subtopics": [
+        "Protocols and encryption (WPA2, WPA3, TKIP, AES)",
+        "Authentication (RADIUS, TACACS+, Kerberos, Multifactor)"
+      ]
+    },
+    {
+      "id": "aplus-1202-2.4",
+      "domain": 2,
+      "title": "Summarize types of malware and tools/methods for detection, removal, and prevention.",
+      "subtopics": [
+        "Malware (Trojan, Rootkit, Virus, Spyware, Ransomware, Keylogger, Boot sector virus, Cryptominer, Stalkerware, Fileless)",
+        "Adware",
+        "PUP",
+        "Tools/methods (Recovery console, EDR, MDR, XDR, Antivirus, Anti-malware, Email security gateway, Software firewalls, User education/Antiphishing, OS reinstallation)"
+      ]
+    },
+    {
+      "id": "aplus-1202-2.5",
+      "domain": 2,
+      "title": "Compare and contrast common social engineering attacks, threats, and vulnerabilities.",
+      "subtopics": [
+        "Social engineering (Phishing: Vishing/Smishing/QR code/Spear/Whaling, Shoulder surfing, Tailgating, Impersonation, Dumpster diving)",
+        "Threats (DoS, DDoS, Evil twin, Zero-day, Spoofing, On-path, Brute-force, Dictionary, Insider threat, SQL injection, XSS, BEC, Supply chain/pipeline)",
+        "Vulnerabilities (Non-compliant, Unpatched, Unprotected, EOL, BYOD)"
+      ]
+    },
+    {
+      "id": "aplus-1202-2.6",
+      "domain": 2,
+      "title": "Given a scenario, implement procedures for basic SOHO malware removal.",
+      "subtopics": [
+        "Steps 1-10: Investigate/verify, Quarantine, Disable System Restore, Remediate, Update anti-malware, Scan/removal (safe mode, PE), Reimage/reinstall, Schedule scans/updates, Enable System Restore/restore point, Educate end user"
+      ]
+    },
+    {
+      "id": "aplus-1202-2.7",
+      "domain": 2,
+      "title": "Given a scenario, apply workstation security options and hardening techniques.",
+      "subtopics": [
+        "Data-at-rest encryption",
+        "Password considerations (Length, Character types, Uniqueness, Complexity, Expiration)",
+        "BIOS/UEFI passwords",
+        "End-user best practices (Screensaver locks, Log off, Secure hardware, Secure PII/passwords, Password managers)",
+        "Account management (Restrict permissions, Restrict login times, Disable guest, Failed attempts lockout, Timeout/screen lock, Account expiration)",
+        "Change default admin password",
+        "Disable AutoRun",
+        "Disable unused services"
+      ]
+    },
+    {
+      "id": "aplus-1202-2.8",
+      "domain": 2,
+      "title": "Given a scenario, apply common methods for securing mobile devices.",
+      "subtopics": [
+        "Hardening (Device encryption, Screen locks Facial/PIN/Fingerprint/Pattern/Swipe, Configuration profiles)",
+        "Locator applications",
+        "Remote wipes",
+        "Remote backup",
+        "Failed login restrictions",
+        "Policies (MDM, BYOD vs corporate, Profile security)"
+      ]
+    },
+    {
+      "id": "aplus-1202-2.9",
+      "domain": 2,
+      "title": "Compare and contrast common data destruction and disposal methods.",
+      "subtopics": [
+        "Physical destruction (Drilling, Shredding, Degaussing, Incineration)",
+        "Recycling/repurposing (Erasing/wiping, Low-level formatting, Standard formatting)",
+        "Outsourcing (Third-party vendor, Certification of destruction)",
+        "Regulatory/environmental requirements"
+      ]
+    },
+    {
+      "id": "aplus-1202-2.10",
+      "domain": 2,
+      "title": "Given a scenario, apply security settings on SOHO wireless and wired networks.",
+      "subtopics": [
+        "Router settings (Change default passwords, IP filtering, Firmware updates, Content filtering, Physical placement, UPnP, Screened subnet, Secure management access)",
+        "Wireless specific (Changing SSID, Disabling SSID broadcast, Encryption settings, Guest access)",
+        "Firewall settings (Disabling unused ports, Port forwarding/mapping)"
+      ]
+    },
+    {
+      "id": "aplus-1202-2.11",
+      "domain": 2,
+      "title": "Given a scenario, configure relevant security settings in a browser.",
+      "subtopics": [
+        "Browser download/installation (Trusted/Untrusted sources, Hashing)",
+        "Browser patching",
+        "Extensions/plug-ins (Trusted/Untrusted)",
+        "Password managers",
+        "Secure connections/valid certificates",
+        "Settings (Pop-up blocker, Clearing browsing data, Clearing cache, Private browsing, Sign-in/browser sync, Ad blockers, Proxy, Secure DNS)",
+        "Browser feature management (Enable/disable Plugins/Extensions/Features)"
+      ]
+    },
+    {
+      "id": "aplus-1202-3.1",
+      "domain": 3,
+      "title": "Given a scenario, troubleshoot common Windows OS issues.",
+      "subtopics": [
+        "BSOD",
+        "Degraded performance",
+        "Boot issues",
+        "Frequent shutdowns",
+        "Services not starting",
+        "Applications crashing",
+        "Low memory warnings",
+        "USB controller resource warnings",
+        "System instability",
+        "No OS found",
+        "Slow profile load",
+        "Time drift"
+      ]
+    },
+    {
+      "id": "aplus-1202-3.2",
+      "domain": 3,
+      "title": "Given a scenario, troubleshoot common mobile OS and application issues.",
+      "subtopics": [
+        "Application fails to launch/close/update/install",
+        "Slow to respond",
+        "OS fails to update",
+        "Battery life issues",
+        "Random reboots",
+        "Connectivity issues (Bluetooth, Wi-Fi, NFC)",
+        "Screen does not autorotate"
+      ]
+    },
+    {
+      "id": "aplus-1202-3.3",
+      "domain": 3,
+      "title": "Given a scenario, troubleshoot common mobile OS and application security issues.",
+      "subtopics": [
+        "Security concerns (Unauthorized app stores, Developer mode, Root/jailbreak, Unauthorized/malicious apps, Application spoofing)",
+        "Common symptoms (High network traffic, Degraded response, Data-usage limit, Limited/no internet, High number of ads, Fake security warnings, Unexpected app behavior, Leaked personal files/data)"
+      ]
+    },
+    {
+      "id": "aplus-1202-3.4",
+      "domain": 3,
+      "title": "Given a scenario, troubleshoot common PC security issues.",
+      "subtopics": [
+        "Common symptoms (Unable to access network, Desktop alerts, False antivirus alerts, Altered files Missing/renamed/Inaccessible, Unwanted OS notifications, OS update failures)",
+        "Browser symptoms (Random pop-ups, Certificate warnings, Redirection, Degraded performance)"
+      ]
+    },
+    {
+      "id": "aplus-1202-4.1",
+      "domain": 4,
+      "title": "Given a scenario, implement best practices associated with documentation and support systems information management.",
+      "subtopics": [
+        "Ticketing systems (User info, Device info, Description, Categories, Severity, Escalation, Clear written communication Issue/Progress/Resolution)",
+        "Asset management (Inventory lists, CMDB, Asset tags, Procurement lifecycle, Warranty/licensing, Assigned users)",
+        "Types of documents (Incident reports, SOPs Software installation procedure, New user/onboarding checklist, Off-boarding checklist, SLAs Internal/External, Knowledge base/articles)"
+      ]
+    },
+    {
+      "id": "aplus-1202-4.2",
+      "domain": 4,
+      "title": "Given a scenario, apply change management procedures.",
+      "subtopics": [
+        "Documented business processes (Rollback plan, Backup plan, Sandbox testing, Responsible staff, Scope, Change type Standard/Normal/Emergency, Date/time Change freeze/Maintenance windows, Affected systems/impact)",
+        "Change management (Request forms, Purpose, Risk analysis/level, Change board approvals, Implementation, Peer review, End-user acceptance)"
+      ]
+    },
+    {
+      "id": "aplus-1202-4.3",
+      "domain": 4,
+      "title": "Given a scenario, implement workstation backup and recovery methods.",
+      "subtopics": [
+        "Backup (Full, Incremental, Differential, Synthetic full)",
+        "Recovery (In-place/overwrite, Alternative location)",
+        "Backup testing (Frequency)",
+        "Backup rotation schemes (Onsite vs offsite, GFS, 3-2-1 rule)"
+      ]
+    },
+    {
+      "id": "aplus-1202-4.4",
+      "domain": 4,
+      "title": "Given a scenario, use common safety procedures.",
+      "subtopics": [
+        "ESD straps",
+        "ESD mats",
+        "Electrical safety (Equipment grounding)",
+        "Proper component handling/storage",
+        "Cable management",
+        "Antistatic bags",
+        "Government regulations compliance",
+        "Personal safety (Disconnect power, Lifting techniques, Fire safety, Safety goggles, Air filter mask)"
+      ]
+    },
+    {
+      "id": "aplus-1202-4.5",
+      "domain": 4,
+      "title": "Summarize environmental impacts and local environment controls.",
+      "subtopics": [
+        "MSDS documentation (Battery disposal, Toner disposal, Other device disposal)",
+        "Power surges/brownouts/blackouts (UPS, Surge suppressor)",
+        "Temperature/humidity/ventilation (Location/placement, Dust cleanup, Compressed air/vacuums)"
+      ]
+    },
+    {
+      "id": "aplus-1202-4.6",
+      "domain": 4,
+      "title": "Explain the importance of prohibited content/activity and privacy, licensing, and policy concepts.",
+      "subtopics": [
+        "Incident response (Chain of custody, Inform management/law enforcement, Drive copy, Documentation, Order of volatility)",
+        "Licensing/DRM/EULA (Valid licenses, Perpetual, Personal vs corporate, Open-source)",
+        "NDA/MNDA",
+        "Regulated data (Credit card, Government ID, PII, Healthcare, Data retention)",
+        "AUP",
+        "Regulatory/business compliance (Splash screens)"
+      ]
+    },
+    {
+      "id": "aplus-1202-4.7",
+      "domain": 4,
+      "title": "Given a scenario, use proper communication techniques and professionalism.",
+      "subtopics": [
+        "Professional appearance/attire (Formal, Business casual)",
+        "Be on time",
+        "Avoid distractions",
+        "Proper language avoid jargon",
+        "Positive attitude",
+        "Active listening",
+        "Cultural sensitivity",
+        "Deal with difficult customers (Don't argue, Don't dismiss, Don't be judgmental, Clarify/restate)",
+        "Handle confidential materials",
+        "Set expectations/timeline",
+        "Offer repair/replacement",
+        "Documentation",
+        "Follow up"
+      ]
+    },
+    {
+      "id": "aplus-1202-4.8",
+      "domain": 4,
+      "title": "Explain the basics of scripting.",
+      "subtopics": [
+        "Script file types (.bat, .ps1, .vbs, .sh, .js, .py)",
+        "Use cases (Basic automation, Restarting machines, Remapping drives, Installing apps, Automated backups, Gathering info, Initiating updates)",
+        "Other considerations (Introducing malware, Changing settings, Browser/system crashes)"
+      ]
+    },
+    {
+      "id": "aplus-1202-4.9",
+      "domain": 4,
+      "title": "Given a scenario, use remote access technologies.",
+      "subtopics": [
+        "Methods/tools (RDP, VPN, VNC, SSH, RMM, SPICE, WinRM, Third-party Screen sharing/Videoconferencing/File transfer/Desktop management)",
+        "Security considerations"
+      ]
+    },
+    {
+      "id": "aplus-1202-4.10",
+      "domain": 4,
+      "title": "Explain basic concepts related to artificial intelligence (AI).",
+      "subtopics": [
+        "Application integration",
+        "Policy (Appropriate use, Plagiarism)",
+        "Limitations (Bias, Hallucinations, Accuracy)",
+        "Private vs public (Data security, Data source, Data privacy)"
+      ]
+    }
+  ]
+}

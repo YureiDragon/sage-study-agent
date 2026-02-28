@@ -1,0 +1,32 @@
+# Dependencies
+node_modules/
+
+# Build output
+dist/
+
+# Personal files
+soul.md
+config.local.json
+
+# Study progress database
+data/*.db
+data/*.db-journal
+data/*.db-wal
+
+# Environment
+.env
+.env.local
+
+# OS
+.DS_Store
+
+# IDE
+.vscode/
+.idea/
+
+# Claude Code local config
+.claude/
+
+# SQLite (root level, legacy)
+study.db
+study.db-*

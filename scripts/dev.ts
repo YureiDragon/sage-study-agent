@@ -75,13 +75,12 @@ const { server, close } = await createBridgeServer({ port, model });
 const addr = server.address() as { port: number };
 console.log(`Bridge server listening on http://localhost:${addr.port}`);
 
-// Start Vite dev server as a child process
-const isWindows = process.platform === "win32";
-const viteCmd = isWindows ? "npx.cmd" : "npx";
-const vite = spawn(viteCmd, ["vite", "--config", "vite.config.ts"], {
+// Start Vite dev server as a child process.
+// shell: true is required on Windows for .cmd/.bat resolution and paths with spaces.
+const vite = spawn("npx vite --config vite.config.ts", [], {
   cwd: projectRoot,
   stdio: "inherit",
-  shell: false,
+  shell: true,
 });
 
 vite.on("error", (err) => {

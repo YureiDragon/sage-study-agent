@@ -6,8 +6,8 @@
     "node": ">=22"
   },
   "scripts": {
-    "dev": "concurrently \"pnpm dev:bridge\" \"pnpm dev:ui\"",
-    "dev:ui": "tsx scripts/wait-for-bridge.ts && vite --config vite.config.ts",
+    "dev": "tsx watch scripts/dev.ts",
+    "dev:ui": "vite --config vite.config.ts",
     "dev:bridge": "tsx watch scripts/dev.ts",
     "dev:mcp": "tsx src/mcp/server.ts",
     "build": "vite build --config vite.config.ts",
@@ -29,7 +29,6 @@
     "@types/better-sqlite3": "^7.6.13",
     "@types/express": "^5.0.6",
     "@types/ws": "^8.18.1",
-    "concurrently": "^9.1.2",
     "signal-utils": "^0.21.1",
     "tsx": "^4.21.0",
     "typescript": "^5.9.3",

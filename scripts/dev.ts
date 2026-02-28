@@ -1,6 +1,7 @@
 import { createBridgeServer } from "../src/bridge/server.js";
 import { dirname, join } from "node:path";
 import { fileURLToPath } from "node:url";
+import { spawn } from "node:child_process";
 import { copyFileSync, existsSync, mkdirSync, readdirSync, readFileSync } from "node:fs";
 import { StudyDatabase } from "../src/mcp/db.js";
 import type { CertDefinition } from "../src/shared/types.js";
@@ -24,6 +25,8 @@ if (existsSync(envPath)) {
       process.env[key] = value;
     }
   }
+} else {
+  console.warn("No .env file found — copy .env.example to .env and add your token");
 }
 
 // Ensure soul.md exists (copy from example if missing)
@@ -71,7 +74,21 @@ console.log(`Using model: ${model}${modelInput !== model ? ` (${modelInput})` : 
 const { server, close } = await createBridgeServer({ port, model });
 const addr = server.address() as { port: number };
 console.log(`Bridge server listening on http://localhost:${addr.port}`);
-console.log("Open the Vite dev server (pnpm dev:ui) and visit http://localhost:5173");
+
+// Start Vite dev server as a child process
+const isWindows = process.platform === "win32";
+const viteCmd = isWindows ? "npx.cmd" : "npx";
+const vite = spawn(viteCmd, ["vite", "--config", "vite.config.ts"], {
+  cwd: projectRoot,
+  stdio: "inherit",
+  shell: false,
+});
+
+vite.on("error", (err) => {
+  console.error("Failed to start Vite:", err.message);
+});
+
+console.log("Visit http://localhost:5173 to open the app");
 
 // Graceful shutdown on SIGINT/SIGTERM
 let shuttingDown = false;
@@ -79,6 +96,7 @@ const shutdown = async (signal: string) => {
   if (shuttingDown) return;
   shuttingDown = true;
   console.log(`\n${signal} received — shutting down...`);
+  vite.kill();
   await close();
   process.exit(0);
 };

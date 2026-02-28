@@ -20,6 +20,13 @@ Browser (Lit + Vite)  ←→  Bridge Server (Express + WebSocket)  ←→  Claud
 - **Node.js 22+** — [download](https://nodejs.org/) or use `nvm install 22`
 - **pnpm** — `npm install -g pnpm`
 - **Claude Max subscription** — Sage uses the Claude Agent SDK with an OAuth token from Claude Code
+- **C++ build tools** — required by `better-sqlite3` (native addon):
+  - **macOS**: Xcode Command Line Tools (usually preinstalled; if not: `xcode-select --install`)
+  - **Windows**: Install [Visual Studio Build Tools](https://visualstudio.microsoft.com/visual-cpp-build-tools/) with the **"Desktop development with C++"** workload selected. Or run this from an admin PowerShell:
+    ```powershell
+    npm install -g windows-build-tools
+    ```
+  - **Linux**: `sudo apt install build-essential python3` (Debian/Ubuntu) or equivalent
 
 ## Setup
 
@@ -30,6 +37,8 @@ git clone https://github.com/YureiDragon/sage-study-agent.git
 cd sage-study-agent
 pnpm install
 ```
+
+> **Windows note**: If `pnpm install` fails with `node-gyp` errors, make sure the C++ build tools above are installed, then restart your terminal and try again.
 
 ### 2. Get your Claude Code OAuth token
 

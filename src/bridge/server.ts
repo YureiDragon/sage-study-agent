@@ -244,9 +244,12 @@ export async function createBridgeServer(
       model,
       mcpServers: {
         "study-tools": {
-          command: "tsx",
-          args: [resolve(projectRoot, "src/mcp/server.ts")],
-          env: { STUDY_DB_PATH: resolve(projectRoot, "data/study.db") },
+          // Use node directly with tsx loader instead of the tsx command.
+          // On Windows, spawn() can't resolve .cmd files (like tsx.cmd) without shell: true,
+          // and the SDK controls the spawn call.
+          command: process.execPath,
+          args: ["--import", "tsx", resolve(projectRoot, "src/mcp/server.ts")],
+          env: { ...process.env, STUDY_DB_PATH: resolve(projectRoot, "data/study.db") },
         },
       },
     });

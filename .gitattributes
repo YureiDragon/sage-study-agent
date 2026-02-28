@@ -1,0 +1,3 @@
+# Force LF line endings for files that are parsed by tools sensitive to CRLF
+.env text eol=lf
+.env.* text eol=lf

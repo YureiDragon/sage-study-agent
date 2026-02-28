@@ -8,6 +8,24 @@ import type { CertDefinition } from "../src/shared/types.js";
 const __dirname = dirname(fileURLToPath(import.meta.url));
 const projectRoot = join(__dirname, "..");
 
+// Load .env manually to handle CRLF line endings on Windows.
+// Node's --env-file flag doesn't strip \r, which silently breaks values.
+const envPath = join(projectRoot, ".env");
+if (existsSync(envPath)) {
+  const envContent = readFileSync(envPath, "utf-8");
+  for (const line of envContent.split("\n")) {
+    const cleaned = line.replace(/\r$/, "").trim();
+    if (!cleaned || cleaned.startsWith("#")) continue;
+    const eqIdx = cleaned.indexOf("=");
+    if (eqIdx === -1) continue;
+    const key = cleaned.slice(0, eqIdx).trim();
+    const value = cleaned.slice(eqIdx + 1).trim();
+    if (!process.env[key]) {
+      process.env[key] = value;
+    }
+  }
+}
+
 // Ensure soul.md exists (copy from example if missing)
 const soulPath = join(projectRoot, "soul.md");
 const soulExamplePath = join(projectRoot, "soul.example.md");
